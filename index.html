@@ -4,29 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hay Day Barn Storage Calculator</title>
+
+  <meta name="description" content="Free Hay Day barn storage calculator. Get safe item limits based on your level and barn size." />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <div class="container">
-    <h1>Hay Day Barn Storage Calculator</h1>
+
+    <h1>🌾 Hay Day Barn Storage Calculator</h1>
     <p class="subtitle">
       Get safe storage limits based on your level and barn size.
     </p>
 
-    <!-- INPUTS -->
+    <!-- CALCULATOR -->
     <div class="card">
       <label>Player Level</label>
-      <input type="number" id="levelInput" placeholder="e.g. 15" />
+      <input type="number" id="levelInput" placeholder="e.g. 15" min="1" />
 
       <label>Barn Storage Size</label>
-      <input type="number" id="barnInput" placeholder="e.g. 600" />
+      <input type="number" id="barnInput" placeholder="e.g. 600" min="50" />
 
-      <button onclick="calculate()">Calculate</button>
+      <button onclick="calculate()">Calculate Safe Limits</button>
     </div>
 
-    <!-- OUTPUT -->
+    <!-- RESULTS -->
     <div id="results"></div>
+
+    <!-- ABOUT -->
+    <section class="info">
+      <h2>📦 About This Tool</h2>
+      <p>
+        This free tool helps Hay Day players manage their barn storage efficiently.
+        It suggests safe item limits so your barn doesn’t get overfilled while still allowing smooth gameplay.
+      </p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="info">
+      <h2>⚙️ How It Works</h2>
+      <ul>
+        <li>Uses your Hay Day level to estimate unlocked items</li>
+        <li>Divides barn space into logical storage categories</li>
+        <li>Suggests per-item limits (flexible, not strict)</li>
+        <li>Designed for beginners and casual players</li>
+      </ul>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section class="info">
+      <h2>🎥 Hay Day Tips on YouTube</h2>
+      <p>I create Hay Day guides, storage tips, and derby strategies:</p>
+      <p>
+        👉 <a href="https://www.youtube.com/@ClashNFarm" target="_blank" rel="noopener">
+          ClashNFarm on YouTube
+        </a>
+      </p>
+    </section>
+
+    <!-- SUPPORT -->
+    <section class="info">
+      <h2>❤️ Support This Tool</h2>
+      <p>This tool is free and always will be.</p>
+      <p>
+        👉 <a href="https://buymeacoffee.com/ClashNFarm" target="_blank" rel="noopener">
+          Buy Me a Coffee ☕
+        </a>
+      </p>
+      <p class="small">Support is optional. Thanks for using the tool!</p>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="info">
+      <h2>⚖️ Disclaimer</h2>
+      <p>
+        This tool is fan-made and not affiliated with Supercell or Hay Day.
+        All trademarks belong to their respective owners.
+      </p>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="info">
+      <h2>🔒 Privacy Policy</h2>
+      <p>No personal data is collected. No login required.</p>
+      <p>Google AdSense may use cookies to display relevant ads.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="info">
+      <h2>💬 Contact & Community</h2>
+      <p>Have feedback or ideas?</p>
+      <p>
+        👉 <a href="https://discord.gg/whfg9JqZ" target="_blank" rel="noopener">
+          Join the Discord Community
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Inventory Recommendation Engine (Hay Day)</p>
+    </footer>
+
   </div>
 
   <script src="script.js"></script>
