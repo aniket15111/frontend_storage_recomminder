@@ -12,7 +12,7 @@ async function calculate() {
   try {
     // Call FastAPI backend
     const res = await fetch(
-      `http://127.0.0.1:8000/calculate?level=${level}&barn_size=${barn}`
+      `https://inventory-recommendation-engine-hayday.onrender.com/calculate?level=${level}&barn_size=${barn}`
     );
 
     const data = await res.json();
