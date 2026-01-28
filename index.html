@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hay Day Barn Storage Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hay Day Barn Storage Calculator</h1>
+    <p class="subtitle">
+      Get safe storage limits based on your level and barn size.
+    </p>
+
+    <!-- INPUTS -->
+    <div class="card">
+      <label>Player Level</label>
+      <input type="number" id="levelInput" placeholder="e.g. 15" />
+
+      <label>Barn Storage Size</label>
+      <input type="number" id="barnInput" placeholder="e.g. 600" />
+
+      <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <!-- OUTPUT -->
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
